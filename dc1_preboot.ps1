@@ -20,7 +20,7 @@ Set-TimeZone -Name $timezone
 #Set-DnsClientServerAddress -InterfaceAlias $interfaceAlias -ServerAddresses $dnsServer
 Enable-PSRemoting -Force
 Enable-NetFirewallRule -DisplayGroup 'File and Printer Sharing'
-Set-ItemProperty $RunOnceKey "NextRun" 'C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -C "IEX (New-Object Net.WebClient).DownloadString("https://github.com/qz8xTD/soclab/dc1_postreboot1.ps1")"'
+Set-ItemProperty $RunOnceKey "NextRun" "C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAcwA6AC8ALwBnAGkAdABoAHUAYgAuAGMAbwBtAC8AcQB6ADgAeABUAEQALwBzAG8AYwBsAGEAYgAvAGQAYwAxAF8AcABvAHMAdAByAGUAYgBvAG8AdAAxAC4AcABzADEAJwApAA== "
 Set-ItemProperty $AutoLogonRegPath "AutoAdminLogon" -Value "1" -type String
 Set-ItemProperty $AutoLogonRegPath "DefaultUsername" -Value "$AutoLogonUsername" -type String
 Set-ItemProperty $AutoLogonRegPath "DefaultPassword" -Value "$AutoLogonPassword" -type String
