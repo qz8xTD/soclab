@@ -1,1 +1,1 @@
-[Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes("IEX (New-Object Net.WebClient).DownloadString('https://github.com/qz8xTD/soclab/dc1_postreboot1.ps1')"))
+[Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes("IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/qz8xTD/soclab/master/dc1_postreboot.ps1')"))
