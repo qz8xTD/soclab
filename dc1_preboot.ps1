@@ -1,10 +1,10 @@
 $computerName = 'dc1'
 $timezone = 'Mountain Standard Time'
-$ipAddress = '192.168.3.11'
-$dnsServer = '127.0.0.1'
-$interfaceAlias = "ethernet"
-$gateway = '192.168.3.1'
-$subnetMask = '24'
+#$ipAddress = '192.168.3.11'
+#$dnsServer = '127.0.0.1'
+#$interfaceAlias = "ethernet"
+#$gateway = '192.168.3.1'
+#$subnetMask = '24'
 $RunOnceKey = "HKLM:\Software\Microsoft\Windows\CurrentVersion\RunOnce"
 
 $AutoLogonRegPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
@@ -16,8 +16,8 @@ Set-ItemProperty $AutoLogonRegPath "DefaultPassword" -Value "$AutoLogonPassword"
 
 Rename-Computer -NewName $computerName -Force -Confirm:$false
 Set-TimeZone -Name $timezone
-New-NetIPAddress -InterfaceAlias $interfaceAlias -IPAddress $ipAddress -PrefixLength $subnetMask -DefaultGateway $gateway -AddressFamily IPv4
-Set-DnsClientServerAddress -InterfaceAlias $interfaceAlias -ServerAddresses $dnsServer
+#New-NetIPAddress -InterfaceAlias $interfaceAlias -IPAddress $ipAddress -PrefixLength $subnetMask -DefaultGateway $gateway -AddressFamily IPv4
+#Set-DnsClientServerAddress -InterfaceAlias $interfaceAlias -ServerAddresses $dnsServer
 Enable-PSRemoting -Force
 Enable-NetFirewallRule -DisplayGroup 'File and Printer Sharing'
 Set-ItemProperty $RunOnceKey "NextRun" 'C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -C "IEX (New-Object Net.WebClient).DownloadString("https://github.com/qz8xTD/soclab/dc1_postreboot1.ps1")"'
