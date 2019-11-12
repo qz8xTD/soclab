@@ -1,4 +1,4 @@
-$uri = "https://github.com/qz8xTD/soclab/guest_additions.zip"
+$uri = "https://github.com/qz8xTD/soclab/raw/master/guest_additions.zip"
 
 Invoke-WebRequest -Uri $uri  -OutFile ~\Documents\guest_additions.zip
 Expand-Archive -Path ~\Documents\guest_additions.zip -DestinationPath ~\Documents\ -Force
