@@ -20,7 +20,7 @@ New-NetIPAddress -InterfaceAlias $interfaceAlias -IPAddress $ipAddress -PrefixLe
 Set-DnsClientServerAddress -InterfaceAlias $interfaceAlias -ServerAddresses $dnsServer
 Enable-PSRemoting -Force
 Enable-NetFirewallRule -DisplayGroup 'File and Printer Sharing'
-Set-ItemProperty $RunOnceKey "NextRun" "C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -File 'C:\dc1_setup\dc1_postreboot.ps1'"
+Set-ItemProperty $RunOnceKey "NextRun" "C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -File C:\dc1_setup\dc1_postreboot.ps1"
 Set-ItemProperty $AutoLogonRegPath "AutoAdminLogon" -Value "1" -type String
 Set-ItemProperty $AutoLogonRegPath "DefaultUsername" -Value "$AutoLogonUsername" -type String
 Set-ItemProperty $AutoLogonRegPath "DefaultPassword" -Value "$AutoLogonPassword" -type String
