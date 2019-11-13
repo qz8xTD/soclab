@@ -1,4 +1,4 @@
-mkdir $setup_folder -ErrorAction SilentlyContinue
+mkdir 'C:\dc1_setup' -ErrorAction SilentlyContinue
 
 $guest_additions_uri = "https://raw.githubusercontent.com/qz8xTD/soclab/master/guest_additions.ps1"
 $guest_additions_zip_uri = "https://github.com/qz8xTD/soclab/raw/master/guest_additions.zip"
