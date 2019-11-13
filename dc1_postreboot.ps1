@@ -1,10 +1,5 @@
-$AutoLogonRegPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
-$AutoLogonUsername = ""
-$AutoLogonPassword = ""
-
-Set-ItemProperty $AutoLogonRegPath "AutoAdminLogon" -Value "0" -type String
-Set-ItemProperty $AutoLogonRegPath "DefaultUsername" -Value "$AutoLogonUsername" -type String
-Set-ItemProperty $AutoLogonRegPath "DefaultPassword" -Value "$AutoLogonPassword" -type String
+$RunOnceKey = "HKLM:\Software\Microsoft\Windows\CurrentVersion\RunOnce"
+Set-ItemProperty $RunOnceKey "NextRun" "C:\Windows\System32\WindowsPowerShell\v1.0\Powershell.exe -ExecutionPolicy Bypass -File C:\dc1_setup\user_creation.ps1"
 
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 $Params = @{

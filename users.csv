@@ -1,0 +1,12 @@
+﻿Surname,GivenName,SamAccountName,DisplayName,Password,Group
+White,Dana,whited,Dana White,toshiba,Administrators
+Diaz,Nate,diazn,Nate Diaz,graham,Account Operators
+Holloway,Max,hollowaym,Max Holloway,bigguy,Backup Operators
+Robert,Whittaker,whittakerr,Robert Whittaker,jazz,Server Operators
+Cormier,Daniel,cormierd,Daniel Cormier,greg,Domain Admins
+Poirier,Dustin,poirierd,Dustin Poirier,chaos,Enterprise Admins
+Ferguson,Tony,fergusont,Tony Ferguson,fossil,Print Operators
+Cerrone,Donald,cerroned,Donald Cerrone,flight,Schema Admins
+Felder,Paul,felderp,Paul Felder,pirates,Corp Admins
+Romero,Yoel,romeroy,Yoel Romero,cactus,Corp Admins
+Ortega,Brian,ortegab,Brian Ortega,pebbles,Corp Admins
