@@ -44,6 +44,8 @@ function Create-SOCLabGroups {
 # Added sleep to allow some time for AD to load, otherwise would fail
 Start-Sleep -Seconds 60;Create-SOCLabGroups;Create-SOCLabUsers;
 
+Set-DnsServerForwarder -IPAddress 1.1.1.1
+
 $AutoLogonRegPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
 $AutoLogonUsername = ""
 $AutoLogonPassword = ""
