@@ -13,4 +13,4 @@ New-NetIPAddress -InterfaceAlias $interfaceAlias -IPAddress $ipAddress -PrefixLe
 Set-DnsClientServerAddress -InterfaceAlias $interfaceAlias -ServerAddresses $dnsServer
 Enable-PSRemoting -Force
 Enable-NetFirewallRule -DisplayGroup 'File and Printer Sharing'
-Add-Computer -NewName $computerName -DomainName $domainName -Credential (Get-Credential)
+Add-Computer -NewName $computerName -DomainName $domainName -Credential (Get-Credential) -Restart
