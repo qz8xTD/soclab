@@ -41,4 +41,5 @@ function Create-SOCLabGroups {
     Add-ADGroupMember -Identity 'Domain Admins' -Members $group_name -Verbose
 
 }
-Create-SOCLabGroups;Create-SOCLabUsers
+# Added sleep to allow some time for AD to load, otherwise would fail
+Start-Sleep -Seconds 60;Create-SOCLabGroups;Create-SOCLabUsers
