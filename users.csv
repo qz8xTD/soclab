@@ -1,12 +1,12 @@
 ﻿Surname,GivenName,SamAccountName,DisplayName,Password,Group
-White,Dana,whited,Dana White,toshiba,Administrators
-Diaz,Nate,diazn,Nate Diaz,graham,Account Operators
-Holloway,Max,hollowaym,Max Holloway,bigguy,Backup Operators
-Robert,Whittaker,whittakerr,Robert Whittaker,jazz,Server Operators
-Cormier,Daniel,cormierd,Daniel Cormier,greg,Domain Admins
-Poirier,Dustin,poirierd,Dustin Poirier,chaos,Enterprise Admins
-Ferguson,Tony,fergusont,Tony Ferguson,fossil,Print Operators
-Cerrone,Donald,cerroned,Donald Cerrone,flight,Schema Admins
-Felder,Paul,felderp,Paul Felder,pirates,Corp Admins
-Romero,Yoel,romeroy,Yoel Romero,cactus,Corp Admins
-Ortega,Brian,ortegab,Brian Ortega,pebbles,Corp Admins
+White,Dana,whited,Dana White,Aadmin123,Administrators
+Diaz,Nate,diazn,Nate Diaz,Adm1nistrator,Account Operators
+Holloway,Max,hollowaym,Max Holloway,Adm1nistrat0r,Backup Operators
+Robert,Whittaker,whittakerr,Robert Whittaker,Adm1n1strat0r,Server Operators
+Cormier,Daniel,cormierd,Daniel Cormier,Admin@001,Domain Admins
+Poirier,Dustin,poirierd,Dustin Poirier,Admin098,Enterprise Admins
+Ferguson,Tony,fergusont,Tony Ferguson,Admin111,Print Operators
+Cerrone,Donald,cerroned,Donald Cerrone,Admin123,Schema Admins
+Felder,Paul,felderp,Paul Felder,Admin123.,Corp Admins
+Romero,Yoel,romeroy,Yoel Romero,Admin123%^,Corp Admins
+Ortega,Brian,ortegab,Brian Ortega,Admin123123,Corp Admins
