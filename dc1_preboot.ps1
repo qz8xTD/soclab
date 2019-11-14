@@ -1,9 +1,9 @@
 $computerName = 'dc1'
 $timezone = 'Mountain Standard Time'
-$ipAddress = '192.168.3.11'
-$dnsServer = '127.0.0.1'
+$ipAddress = '192.168.1.11'
+$dnsServer = '192.168.1.1'
 $interfaceAlias = "ethernet"
-$gateway = '192.168.3.1'
+$gateway = '192.168.1.1'
 $subnetMask = '24'
 $RunOnceKey = "HKLM:\Software\Microsoft\Windows\CurrentVersion\RunOnce"
 
